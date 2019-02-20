@@ -1,4 +1,4 @@
-<h1><%= @department.id ? 'Edit department' : 'Create department' %></h1>
+<h1><%= @department.id ? 'Edit Sub' : 'Create Sub' %></h1>
 <hr />
 <%= form_for @department do |f| %>
   <%= f.label :mens %>
@@ -11,3 +11,6 @@
   <%= f.text_field :cats, required: true, autofocus: true %>
   <%= f.submit %>
 <% end %>
+<%# <%= select_tag, @departments = option_for_select(@departments.map{|department| ["#{department.mens} #{department.womens} #{department.kids} #{department.cats}", department.id] }) %> 
+
+
