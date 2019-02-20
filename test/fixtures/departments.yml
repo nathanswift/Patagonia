@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mens: MyString
+  womens: MyString
+
+two:
+  mens: MyString
+  womens: MyString
