@@ -1,5 +1,5 @@
 <h1><%= @department.name %> - <%= @category.name %></h1>
-<p><%= @category.body %></p>
 <%= link_to 'Edit category', edit_department_category_path([@department, @category]) %>
 <%= link_to 'Delete category', [@department, @category], method: :delete %>
 <%= link_to 'Back To categories', department_categories_path(@department) %>
+<%= link_to 'View All Items', category_items_path(@category) %>

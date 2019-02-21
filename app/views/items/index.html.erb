@@ -1,2 +1,8 @@
-<h1>Items#index</h1>
-<p>Find me in app/views/items/index.html.erb</p>
+<h1>See Items</h1>
+<%= link_to 'Create Item', new_category_item_path(@category) %>
+<%= link_to 'Back To categories', department_categories_path(@category) %>
+<ul>
+<% @items.each do |item| %>
+    <li><%= link_to item.name, [@category, item] %></li>
+  <% end %>
+</ul>

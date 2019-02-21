@@ -1,0 +1,12 @@
+<h1><%= @item.id ? 'Edit item' : 'Create item' %></h1>
+<hr />
+<%= form_for [@category, @item] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true, autofocus: true %>
+  <%= f.label :image %>
+  <%= f.text_field :image, required: true, autofocus: true %>
+  <%= f.label :description %>
+  <%= f.text_field :description, required: true, autofocus: true %>
+  <%= f.label :price %>
+  <%= f.text_field :price, required: true, autofocus: true %>
+<% end %>

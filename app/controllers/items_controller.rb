@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :set_item 
+  before_action :set_category
   before_action :set_item, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -44,11 +44,11 @@ class ItemsController < ApplicationController
 
   private
     def set_category
-      @category = category.find(params[:category_id])
+      @category = Category.find(params[:category_id])
     end
 
     def set_item
-      @item = item.find(params[:id])
+      @item = Item.find(params[:id])
     end
 
     def item_params
