@@ -44,7 +44,7 @@ class DepartmentsController < ApplicationController
 
   private
     def department_params
-      params.require(:department).permit(:mens, :womens, :kids, :cats)  
+      params.require(:department).permit(:name)  
     end
 
     def set_department

@@ -52,6 +52,6 @@ class CategoriesController < ApplicationController
       end
   
       def category_params
-        params.require(:category).permit(:jacket, :shirts, :pants, :shoes)
+        params.require(:category).permit(:name)
       end
 end

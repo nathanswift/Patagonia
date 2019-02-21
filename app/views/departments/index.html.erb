@@ -1,13 +1,7 @@
-<h1>Click a Department To View Content</h1>
-<%= link_to 'Mens', new_department_path %>
-<%= link_to 'Womens', new_department_path %>
-<%= link_to 'Kids', new_department_path %>
-<%= link_to 'Cats', new_department_path %>
+<h1>Click a Department To View Category</h1>
+<%= link_to 'Categories', @department_categories_path %>
 <ul>
   <% @departments.each do |department| %>
-    <li><%= link_to department.mens, department %></li>
-    <li><%= link_to department.womens, department %></li>
-    <li><%= link_to department.kids, department %></li>
-    <li><%= link_to department.cats, department %></li>
+    <li><%= link_to department.name, department %></li>
   <% end %>
 </ul>

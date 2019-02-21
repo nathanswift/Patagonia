@@ -1,10 +1,6 @@
 <h1><%= @category.id ? 'Edit Category' : 'Create Category' %></h1>
 <hr />
-<%= form_for [@sub, @category] do |f| %>
+<%= form_for [@department, @category] do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name, required: true, autofocus: true %>
-  <br />
-  <%= f.label :body %>
-  <%= f.text_area :body, required: true %>
-  <%= f.submit %>
 <% end %>
