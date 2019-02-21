@@ -1,5 +1,5 @@
 <h1>Click a Category To View an Item</h1>
-<%= link_to 'Items', new_department_category_path(@department) %>
+<%= link_to 'Create Categories', new_department_category_path(@department) %>
 <ul>
   <% @categories.each do |category| %>
     <li><%= link_to category.name, [@department, category] %></li>

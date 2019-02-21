@@ -44,11 +44,11 @@ class CategoriesController < ApplicationController
   
     private
       def set_department
-        @department = department.find(params[:department_id])
+        @department = Department.find(params[:department_id])
       end
   
       def set_category
-        @category = category.find(params[:id])
+        @category = Category.find(params[:id])
       end
   
       def category_params
